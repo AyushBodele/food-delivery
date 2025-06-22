@@ -140,6 +140,8 @@ export const restaurantData = [
                       costForTwo: "₹250 for two",
                       cuisines: ["North Indian", "Sweets"],
                       avgRating: 4.3,
+                      fastDelivery: true,
+                      hasOffers: true,
                       imageUrl: "1abb89624b491497c8cff182d95ac457"
                     }
                   }
@@ -184,6 +186,7 @@ export const restaurantData = [
                   cuisines: ["Thali", "Indian"],
                   avgRating: 4.2,
                   fastDelivery: false,
+                  hasOffers: true,
                   imageUrl: "1abb89624b491497c8cff182d95ac457"
                 }
               },
@@ -197,6 +200,7 @@ export const restaurantData = [
                   cuisines: ["Pizzas", "Italian"],
                   avgRating: 4.0,
                   fastDelivery: true,
+                  hasOffers: true,
                   imageUrl: "RX_THUMBNAIL/IMAGES/VENDOR/2024/11/7/86804dcc-3102-4f78-89c8-74251507d645_981401.jpg"
                 }
               },
@@ -210,6 +214,7 @@ export const restaurantData = [
                   cuisines: ["Snacks", "Sweets"],
                   avgRating: 4.3,
                   fastDelivery: true,
+                  hasOffers: true,
                   imageUrl: "25c3a7d394d6c5556b134385f7d665b0"
                 }
               }
@@ -240,6 +245,7 @@ export const restaurantData = [
                       cuisines: ["Bakery", "Cafe"],
                       avgRating: 4.4,
                       fastDelivery: true,
+                      hasOffers: true,
                       imageUrl: "RX_THUMBNAIL/IMAGES/VENDOR/2024/8/7/7517f3a5-b14b-474b-899f-f72cb03c00dd_937924.jpg"
                     }
                   },
@@ -253,6 +259,7 @@ export const restaurantData = [
                       cuisines: ["Biryani", "Indian"],
                       avgRating: 4.1,
                       fastDelivery: false,
+                      hasOffers: true,
                       imageUrl: "inkhbegucjpihwm1jbpf"
                     }
                   },
@@ -266,6 +273,7 @@ export const restaurantData = [
                       cuisines: ["Coffee", "Snacks"],
                       avgRating: 4.0,
                       fastDelivery: true,
+                      hasOffers: false,
                       imageUrl: "ec37353246a2b72c7742cb9bf99810e0"
                     }
                   },
@@ -279,6 +287,7 @@ export const restaurantData = [
                       cuisines: ["South Indian", "Snacks", "Beverages"],
                       avgRating: 4.2,
                       fastDelivery: true,
+                      hasOffers: true,
                       imageUrl: "9c6e3d7a2fbc4b23a5e1db9a9d2f9f11"
                     }
                   }
@@ -309,6 +318,7 @@ export const restaurantData = [
                       cuisines: ["Thali", "Indian"],
                       avgRating: 4.2,
                       fastDelivery: false,
+                      hasOffers: true,
                       imageUrl: "Autosuggest/Top%20200%20queries/Veg%20Thali.png"
                     }
                   },
@@ -322,6 +332,7 @@ export const restaurantData = [
                       cuisines: ["Snacks", "Street Food"],
                       avgRating: 4.0,
                       fastDelivery: true,
+                      hasOffers: false,
                       imageUrl: "xwfcgbriwkfttaqsrt2x"
                     }
                   },
@@ -335,6 +346,7 @@ export const restaurantData = [
                       cuisines: ["Cafe", "Fast Food"],
                       avgRating: 4.3,
                       fastDelivery: true,
+                      hasOffers: true,
                       imageUrl: "5b17fc2fe703cfaa5478f2994fdf2e1d"
                     }
                   },
@@ -347,7 +359,8 @@ export const restaurantData = [
                       costForTwo: "₹400 for two",
                       cuisines: ["North Indian", "Chinese"],
                       avgRating: 4.5,
-                      fastDelivery: false,
+                      fastDelivery: true,
+                      hasOffers: true,
                       imageUrl: "f3d4d2b799cb44e2987e1bafc870bd32"
                     }
                   }
@@ -379,6 +392,8 @@ export const restaurantData = [
                     costForTwo: "₹400 for two",
                     cuisines: ["Chicken", "Fast Food"],
                     avgRating: 4.3,
+                    fastDelivery: true,
+                    hasOffers: true,
                     imageUrl: "RX_THUMBNAIL/IMAGES/VENDOR/2024/12/9/b6564f42-2e35-4dab-8c67-08d49f6f55c5_53868.JPG"
                   }
                 },
@@ -391,6 +406,8 @@ export const restaurantData = [
                     costForTwo: "₹250 for two",
                     cuisines: ["Momos", "Tibetan"],
                     avgRating: 4.0,
+                    fastDelivery: false,
+                    hasOffers: true,
                     imageUrl: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/wowmomo_image"
                   }
                 },
@@ -403,6 +420,8 @@ export const restaurantData = [
                     costForTwo: "₹500 for two",
                     cuisines: ["Biryani", "Mughlai"],
                     avgRating: 4.5,
+                    fastDelivery: true,
+                    hasOffers: true,
                     imageUrl: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/behrouz_image"
                   }
                 },
@@ -415,6 +434,8 @@ export const restaurantData = [
                     costForTwo: "₹350 for two",
                     cuisines: ["Pizzas", "Italian"],
                     avgRating: 4.1,
+                    fastDelivery: true,
+                    hasOffers: true,
                     imageUrl: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/lapinoz_image"
                   }
                 }
@@ -446,6 +467,8 @@ export const restaurantData = [
                     costForTwo: "₹350 for two",
                     cuisines: ["Burgers", "Beverages"],
                     avgRating: 4.4,
+                    fastDelivery: true,
+                    hasOffers: true,
                     imageUrl: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/mcdonalds_image"
                   }
                 },
@@ -458,6 +481,8 @@ export const restaurantData = [
                     costForTwo: "₹300 for two",
                     cuisines: ["Healthy Food", "Salads"],
                     avgRating: 4.2,
+                    fastDelivery: false,
+                    hasOffers: true,
                     imageUrl: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/subway_image"
                   }
                 },
@@ -470,6 +495,8 @@ export const restaurantData = [
                     costForTwo: "₹200 for two",
                     cuisines: ["Desserts", "Waffles"],
                     avgRating: 4.6,
+                    fastDelivery: true,
+                    hasOffers: true,
                     imageUrl: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/waffleco_image"
                   }
                 },
@@ -482,6 +509,8 @@ export const restaurantData = [
                     costForTwo: "₹500 for two",
                     cuisines: ["Cafe", "Continental"],
                     avgRating: 4.5,
+                    fastDelivery: true,
+                    hasOffers: true,
                     imageUrl: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/mitticafe_image"
                   }
                 },
