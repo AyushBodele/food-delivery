@@ -5,3 +5,5 @@ export const heroImg1 = "https://media-assets.swiggy.com/swiggy/image/upload/fl_
 export const heroImg2 = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/testing/seo-home/Sushi_replace.png"
 
 export const bannerImg = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/m/seo/App_download_banner.png"
+
+export const imageBaseURL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"

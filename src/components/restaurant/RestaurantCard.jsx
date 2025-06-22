@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { imageBaseURL } from '../../utils/imagesURL';
 
 // ✅ Helper function to get full image URL
 const getSwiggyImageUrl = (imageId) => {
-  const baseUrl = 'https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/';
-  return `${baseUrl}${imageId}`;
+  return `${imageBaseURL}${imageId}`;
 };
 
 const RestaurantCard = ({ restaurant }) => {
