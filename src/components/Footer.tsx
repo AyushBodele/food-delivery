@@ -43,6 +43,7 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">We deliver to</h3>
             <ul className="space-y-2">
+              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Nagpur</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Bangalore</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Gurgaon</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Hyderabad</a></li>
