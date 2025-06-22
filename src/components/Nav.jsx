@@ -1,4 +1,4 @@
-import React from 'react';
+import { logo } from '../utils/imagesURL';
 import { HiArrowUpRight } from 'react-icons/hi2';
 
 function Nav() {
@@ -7,7 +7,7 @@ function Nav() {
         <nav className="absolute top-4.5 left-34 p-4">
         <img
             className="w-auto h-12"
-            src="https://res.cloudinary.com/dutdah0l9/image/upload/v1720058694/Swiggy_logo_bml6he.png"
+            src={logo}
             alt="Swiggy Logo"
         />
         </nav>

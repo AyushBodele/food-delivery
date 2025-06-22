@@ -1,17 +1,22 @@
-import React from 'react'
+import Card from './Card';
+import { heroImg1, heroImg2} from '../utils/imagesURL';
 import { HiOutlineMapPin, HiChevronDown } from 'react-icons/hi2';
 import { FiSearch } from 'react-icons/fi';
+import foodImage1 from '../assets/foodImage1.png';
+import foodImage2 from '../assets/foodImage2.png';
+import foodImage3 from '../assets/foodImage3.png';
+
 function Hero() {
   return (
     <>
-      <main className='bg-[#ff5200] h-screen'>
+      <main className='bg-[#ff5200] h-120vh'>
         <img 
           className='absolute h-127 top-25'
-          src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/testing/seo-home/Veggies_new.png"
+          src={heroImg1}
         />
         <img 
           className='absolute h-127 top-25 right-0'
-          src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/testing/seo-home/Sushi_replace.png"
+          src={heroImg2}
         />
         <div className='text-center pt-50 text-white font-bold text-5xl'>
           <h1>Order food & groceries. Discover<br></br>best restaurants. Swiggy it!</h1>
@@ -35,6 +40,18 @@ function Hero() {
           />
           <FiSearch className="text-gray-500 w-5 h-5" />
       </div>
+
+
+        <div className='flex justify-center mt-7 '>
+          <Card image={foodImage1}/>
+          <Card image={foodImage2}/>
+          <Card image={foodImage3}/>
+        </div>
+
+        <div className="bg-[#ff5200] py-1 px- pb-5">
+        <div className="bg-white flex items-center justify-between w-full max-w-screen-xl mx-auto h-3"></div>
+
+     </div>
       </main>
     </>
   )
