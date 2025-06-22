@@ -98,6 +98,8 @@ export const restaurantData = [
                       "costForTwo": "₹350 for two",
                       "cuisines": ["Pizzas"],
                       "avgRating": 4.2,
+                      "fastDelivery": true,
+                      "hasOffers": true,
                       "imageUrl": "RX_THUMBNAIL/IMAGES/VENDOR/2025/6/9/a1e023e4-bdf3-4bcb-b4d9-2498ba52528e_1003414.JPG"
                     }
                   },
@@ -110,6 +112,8 @@ export const restaurantData = [
                       "costForTwo": "₹300 for two",
                       "cuisines": ["Burgers", "American"],
                       "avgRating": 4.1,
+                      "fastDelivery": true,
+                      "hasOffers": true,
                       "imageUrl": "RX_THUMBNAIL/IMAGES/VENDOR/2025/6/18/30080344-82ac-4002-8f51-db1645b4e41d_697183.jpg"
                     }
                   },
@@ -122,6 +126,8 @@ export const restaurantData = [
                       "costForTwo": "₹400 for two",
                       "cuisines": ["Pizzas", "Italian"],
                       "avgRating": 4.0,
+                      "fastDelivery": false,
+                      "hasOffers": true,
                       "imageUrl": "RX_THUMBNAIL/IMAGES/VENDOR/2025/6/14/10c8e061-f1a3-4c63-9507-22aca6e01008_54604.JPG"
                     }
                   },
@@ -163,6 +169,7 @@ export const restaurantData = [
                   costForTwo: "₹600 for two",
                   cuisines: ["BBQ", "North Indian"],
                   avgRating: 4.4,
+                  hasOffers: true,
                   fastDelivery: true,
                   imageUrl: "xxh8c7ggvlhlzlx3oyv4"
                 }
