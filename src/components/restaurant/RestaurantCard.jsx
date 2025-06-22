@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { imageBaseURL } from '../../utils/imagesURL';
 
-// ✅ Helper function to get full image URL
 const getSwiggyImageUrl = (imageId) => {
   return `${imageBaseURL}${imageId}`;
 };
@@ -22,7 +21,7 @@ const RestaurantCard = ({ restaurant }) => {
 
   return (
     <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-200">
-      {/* Restaurant Image */}
+      
       <div className="relative h-48 overflow-hidden">
         <img
           src={getSwiggyImageUrl(imageUrl)}
@@ -31,16 +30,16 @@ const RestaurantCard = ({ restaurant }) => {
         />
       </div>
 
-      {/* Content */}
+   
       <div className="p-4">
-        {/* Name */}
+      
         <div className="flex items-center gap-2 mb-2">
           <h3 className="font-semibold text-gray-900 text-lg truncate flex-1">
             {name}
           </h3>
         </div>
 
-        {/* Rating and Cost */}
+      
         <div className="flex items-center gap-2 mb-2 text-sm text-gray-600">
           <div className="flex items-center gap-1">
             <div className="w-4 h-4 bg-green-600 rounded-full flex items-center justify-center">
@@ -52,12 +51,11 @@ const RestaurantCard = ({ restaurant }) => {
           <span>{costForTwo}</span>
         </div>
 
-        {/* Cuisines */}
+      
         <div className="text-sm text-gray-600 mb-1 line-clamp-1">
           {cuisines.join(', ')}
         </div>
 
-        {/* Area and Locality */}
         <div className="text-sm text-gray-500">
           {locality}, {areaName}
         </div>
@@ -66,7 +64,7 @@ const RestaurantCard = ({ restaurant }) => {
   );
 };
 
-// PropTypes
+
 RestaurantCard.propTypes = {
   restaurant: PropTypes.shape({
     info: PropTypes.shape({

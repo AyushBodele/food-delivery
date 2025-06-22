@@ -16,7 +16,7 @@ const RestaurantList = () => {
 
   const [activeFilter, setActiveFilter] = useState('all');
   const [selectedCity, setSelectedCity] = useState(cities[0]?.cityName || '');
-  const [cardsToShow, setCardsToShow] = useState(8); // pagination
+  const [cardsToShow, setCardsToShow] = useState(8);
 
   const getRestaurantsForCity = (cityName) => {
     const city = cities.find((c) => c.cityName === cityName);
@@ -56,7 +56,7 @@ const RestaurantList = () => {
       );
     case 'offers':
       return restaurantsToFilter.filter(
-        (r) => r.info?.hasOffer === true
+        (r) => r.info?.hasOffers === true
       );
     default:
       return restaurantsToFilter;
@@ -82,7 +82,7 @@ const RestaurantList = () => {
               selectedCity={selectedCity}
               onChange={(cityName) => {
                 setSelectedCity(cityName);
-                setCardsToShow(8); // reset pagination
+                setCardsToShow(8); 
               }}
             />
           )}
@@ -92,14 +92,14 @@ const RestaurantList = () => {
             activeFilter={activeFilter}
             setActiveFilter={(filterKey) => {
               setActiveFilter(filterKey);
-              setCardsToShow(8); // reset pagination
+              setCardsToShow(8);
             }}
           />
         </div>
 
         <RestaurantGrid restaurants={visibleRestaurants} />
 
-        {/* Show More Button */}
+        
         {cardsToShow < filteredRestaurants.length && (
           <div className="flex justify-center mt-10">
             <button

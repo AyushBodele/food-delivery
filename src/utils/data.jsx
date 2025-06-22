@@ -1,3 +1,29 @@
+import foodImage1 from '../assets/foodImage1.png';
+import foodImage2 from '../assets/foodImage2.png';
+import foodImage3 from '../assets/foodImage3.png';
+
+
+export const cardData = [
+  {
+    title: 'FOOD DELIVERY',
+    subtitle: 'FROM RESTAURANTS',
+    discount: 'UPTO 60% OFF',
+    image: foodImage1,
+  },
+  {
+    title: 'INSTAMART',
+    subtitle: 'INSTANT GROCERY',
+    discount: 'FLAT 60% OFF',
+    image: foodImage2,
+  },
+  {
+    title: 'DINEOUT',
+    subtitle: 'EAT OUT & SAVE MORE',
+    discount: 'FLAT 50% OFF',
+    image: foodImage3,
+  },
+];
+
 export const foodItems = [
   { name: 'Biryani', image: 'https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Biryani.png' },
   { name: 'Momo', image: 'https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Momo.png' },
