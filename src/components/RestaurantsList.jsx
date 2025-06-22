@@ -13,10 +13,6 @@ const filters = [
 
 const RestaurantList = () => {
   const cities = restaurantData[0].cities;
-  console.log(restaurantData[0].cities.map(city => ({
-  cityName: city.cityName,
-  count: city?.card?.card?.gridElements?.infoWithStyle?.restaurants?.length
-})));
 
   const [activeFilter, setActiveFilter] = useState('all');
   const [selectedCity, setSelectedCity] = useState(cities[0].cityName);
@@ -32,26 +28,16 @@ const RestaurantList = () => {
     );
   };
 
-const getAllRestaurantsFromAllCities = () => {
-  return cities.flatMap(city => {
-    const cityName = city.cityName;
-
-    let restaurants = city?.card?.card?.gridElements?.infoWithStyle?.restaurants;
-
-    if (!restaurants || !restaurants.length) {
-      console.warn(`❌ Structure mismatch in: ${cityName}`);
-      console.log(JSON.stringify(city.card.card, null, 2)); // <-- This is the important part!
-    } else {
-      console.log(`✅ ${cityName}: ${restaurants.length} restaurants`);
-    }
-
-    return (restaurants || []).map(r => ({
-      ...r,
-      cityName,
-    }));
-  });
-};
-
+  const getAllRestaurantsFromAllCities = () => {
+    return cities.flatMap(city => {
+      const cityName = city.cityName;
+      const restaurants = city?.card?.card?.gridElements?.infoWithStyle?.restaurants;
+      return (restaurants || []).map(r => ({
+        ...r,
+        cityName,
+      }));
+    });
+  };
 
   const filterRestaurants = () => {
     const restaurantsToFilter =
