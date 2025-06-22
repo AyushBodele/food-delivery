@@ -75,72 +75,72 @@ export const categories = [
 
 export const restaurantData = [
     {
-  "cities": [
+  cities: [
       {
-        "cityName": "Chhindwara",
-        "card": {
-          "card": {
+        cityName: "Chhindwara",
+        card: {
+          card: {
             "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget",
-            "layout": {
-              "columns": 4
+            layout: {
+              columns: 4
             },
-            "id": "restaurant_grid_listing_v2",
-            "gridElements": {
-              "infoWithStyle": {
+            id: "restaurant_grid_listing_v2",
+            gridElements: {
+              infoWithStyle: {
                 "@type": "type.googleapis.com/swiggy.seo.widgets.v1.FoodRestaurantGridListingInfo",
-                "restaurants": [
+                restaurants: [
                   {
-                    "info": {
-                      "id": "1003414",
-                      "name": "Pizza Hut",
-                      "locality": "Parasia Road",
-                      "areaName": "Chhindwara",
-                      "costForTwo": "₹350 for two",
-                      "cuisines": ["Pizzas"],
-                      "avgRating": 4.2,
-                      "fastDelivery": true,
-                      "hasOffers": true,
-                      "imageUrl": "RX_THUMBNAIL/IMAGES/VENDOR/2025/6/9/a1e023e4-bdf3-4bcb-b4d9-2498ba52528e_1003414.JPG"
+                    info: {
+                      id: "1003414",
+                      name: "Pizza Hut",
+                      locality: "Parasia Road",
+                      areaName: "Chhindwara",
+                      costForTwo: "₹350 for two",
+                      cuisines: ["Pizzas"],
+                      avgRating: 4.2,
+                      fastDelivery: true,
+                      hasOffers: true,
+                      imageUrl: "RX_THUMBNAIL/IMAGES/VENDOR/2025/6/9/a1e023e4-bdf3-4bcb-b4d9-2498ba52528e_1003414.JPG"
                     }
                   },
                   {
                     "info": {
-                      "id": "1003415",
-                      "name": "Burger King",
-                      "locality": "Main Square",
-                      "areaName": "Chhindwara Center",
-                      "costForTwo": "₹300 for two",
-                      "cuisines": ["Burgers", "American"],
-                      "avgRating": 4.1,
-                      "fastDelivery": true,
-                      "hasOffers": true,
-                      "imageUrl": "RX_THUMBNAIL/IMAGES/VENDOR/2025/6/18/30080344-82ac-4002-8f51-db1645b4e41d_697183.jpg"
+                      id: "1003415",
+                      name: "Burger King",
+                      locality: "Main Square",
+                      areaName: "Chhindwara Center",
+                      costForTwo: "₹300 for two",
+                      cuisines: ["Burgers", "American"],
+                      avgRating: 4.1,
+                      fastDelivery: true,
+                      hasOffers: true,
+                      imageUrl: "RX_THUMBNAIL/IMAGES/VENDOR/2025/6/18/30080344-82ac-4002-8f51-db1645b4e41d_697183.jpg"
                     }
                   },
                   {
                     "info": {
-                      "id": "1003416",
-                      "name": "Domino's Pizza",
-                      "locality": "Station Road",
-                      "areaName": "Chhindwara East",
-                      "costForTwo": "₹400 for two",
-                      "cuisines": ["Pizzas", "Italian"],
-                      "avgRating": 4.0,
-                      "fastDelivery": false,
-                      "hasOffers": true,
-                      "imageUrl": "RX_THUMBNAIL/IMAGES/VENDOR/2025/6/14/10c8e061-f1a3-4c63-9507-22aca6e01008_54604.JPG"
+                      id: "1003416",
+                      name: "Domino's Pizza",
+                      locality: "Station Road",
+                      areaName: "Chhindwara East",
+                      costForTwo: "₹400 for two",
+                      cuisines: ["Pizzas", "Italian"],
+                      avgRating: 4.0,
+                      fastDelivery: false,
+                      hasOffers: true,
+                      imageUrl: "RX_THUMBNAIL/IMAGES/VENDOR/2025/6/14/10c8e061-f1a3-4c63-9507-22aca6e01008_54604.JPG"
                     }
                   },
                   {
-                    "info": {
-                      "id": "1003417",
-                      "name": "Haldiram's",
-                      "locality": "Railway Station",
-                      "areaName": "Chhindwara West",
-                      "costForTwo": "₹250 for two",
-                      "cuisines": ["North Indian", "Sweets"],
-                      "avgRating": 4.3,
-                      "imageUrl": "1abb89624b491497c8cff182d95ac457"
+                    info: {
+                      id: "1003417",
+                      name: "Haldiram's",
+                      locality: "Railway Station",
+                      areaName: "Chhindwara West",
+                      costForTwo: "₹250 for two",
+                      cuisines: ["North Indian", "Sweets"],
+                      avgRating: 4.3,
+                      imageUrl: "1abb89624b491497c8cff182d95ac457"
                     }
                   }
                 ]
@@ -271,15 +271,15 @@ export const restaurantData = [
                   },
                   {
                     info: {
-                      "id": "6004892",
-                      "name": "Taste Town",
-                      "locality": "City Centre",
-                      "areaName": "Gwalior",
-                      "costForTwo": "₹350 for two",
-                      "cuisines": ["South Indian", "Snacks", "Beverages"],
-                      "avgRating": 4.2,
-                      "fastDelivery": true,
-                      "imageUrl": "9c6e3d7a2fbc4b23a5e1db9a9d2f9f11"
+                      id: "6004892",
+                      name: "Taste Town",
+                      locality: "City Centre",
+                      areaName: "Gwalior",
+                      costForTwo: "₹350 for two",
+                      cuisines: ["South Indian", "Snacks", "Beverages"],
+                      avgRating: 4.2,
+                      fastDelivery: true,
+                      imageUrl: "9c6e3d7a2fbc4b23a5e1db9a9d2f9f11"
                     }
                   }
                 ]
@@ -340,15 +340,15 @@ export const restaurantData = [
                   },
                   {
                     info: {
-                      "id": "6004578",
-                      "name": "Spice Junction",
-                      "locality": "Freeganj",
-                      "areaName": "Ujjain",
-                      "costForTwo": "₹400 for two",
-                      "cuisines": ["North Indian", "Chinese"],
-                      "avgRating": 4.5,
-                      "fastDelivery": false,
-                      "imageUrl": "f3d4d2b799cb44e2987e1bafc870bd32"
+                      id: "6004578",
+                      name: "Spice Junction",
+                      locality: "Freeganj",
+                      areaName: "Ujjain",
+                      costForTwo: "₹400 for two",
+                      cuisines: ["North Indian", "Chinese"],
+                      avgRating: 4.5,
+                      fastDelivery: false,
+                      imageUrl: "f3d4d2b799cb44e2987e1bafc870bd32"
                     }
                   }
                 ]
@@ -358,64 +358,64 @@ export const restaurantData = [
         }
       },
       {
-      "cityName": "Bhopal",
-      "card": {
-        "card": {
+      cityName: "Bhopal",
+      card: {
+        card: {
           "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget",
-          "layout": {
-            "columns": 4
+          layout: {
+            columns: 4
           },
-          "id": "restaurant_grid_listing_v2",
-          "gridElements": {
-            "infoWithStyle": {
+          id: "restaurant_grid_listing_v2",
+          gridElements: {
+            infoWithStyle: {
               "@type": "type.googleapis.com/swiggy.seo.widgets.v1.FoodRestaurantGridListingInfo",
-              "restaurants": [
+              restaurants: [
                 {
-                  "info": {
-                    "id": "2001123",
-                    "name": "KFC",
-                    "locality": "MP Nagar",
-                    "areaName": "Zone 1",
-                    "costForTwo": "₹400 for two",
-                    "cuisines": ["Chicken", "Fast Food"],
-                    "avgRating": 4.3,
-                    "imageUrl": "RX_THUMBNAIL/IMAGES/VENDOR/2024/12/9/b6564f42-2e35-4dab-8c67-08d49f6f55c5_53868.JPG"
+                  info: {
+                    id: "2001123",
+                    name: "KFC",
+                    locality: "MP Nagar",
+                    areaName: "Zone 1",
+                    costForTwo: "₹400 for two",
+                    cuisines: ["Chicken", "Fast Food"],
+                    avgRating: 4.3,
+                    imageUrl: "RX_THUMBNAIL/IMAGES/VENDOR/2024/12/9/b6564f42-2e35-4dab-8c67-08d49f6f55c5_53868.JPG"
                   }
                 },
                 {
-                  "info": {
-                    "id": "2001124",
-                    "name": "Wow! Momo",
-                    "locality": "New Market",
-                    "areaName": "TT Nagar",
-                    "costForTwo": "₹250 for two",
-                    "cuisines": ["Momos", "Tibetan"],
-                    "avgRating": 4.0,
-                    "imageUrl": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/wowmomo_image"
+                  info: {
+                    id: "2001124",
+                    name: "Wow! Momo",
+                    locality: "New Market",
+                    areaName: "TT Nagar",
+                    costForTwo: "₹250 for two",
+                    cuisines: ["Momos", "Tibetan"],
+                    avgRating: 4.0,
+                    imageUrl: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/wowmomo_image"
                   }
                 },
                 {
-                  "info": {
-                    "id": "2001125",
-                    "name": "Behrouz Biryani",
-                    "locality": "Arera Colony",
-                    "areaName": "Habib Ganj",
-                    "costForTwo": "₹500 for two",
-                    "cuisines": ["Biryani", "Mughlai"],
-                    "avgRating": 4.5,
-                    "imageUrl": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/behrouz_image"
+                  info: {
+                    id: "2001125",
+                    name: "Behrouz Biryani",
+                    locality: "Arera Colony",
+                    areaName: "Habib Ganj",
+                    costForTwo: "₹500 for two",
+                    cuisines: ["Biryani", "Mughlai"],
+                    avgRating: 4.5,
+                    imageUrl: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/behrouz_image"
                   }
                 },
                 {
-                  "info": {
-                    "id": "2001126",
-                    "name": "La Pino'z Pizza",
-                    "locality": "Kolar Road",
-                    "areaName": "Mandakini",
-                    "costForTwo": "₹350 for two",
-                    "cuisines": ["Pizzas", "Italian"],
-                    "avgRating": 4.1,
-                    "imageUrl": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/lapinoz_image"
+                  info: {
+                    id: "2001126",
+                    name: "La Pino'z Pizza",
+                    locality: "Kolar Road",
+                    areaName: "Mandakini",
+                    costForTwo: "₹350 for two",
+                    cuisines: ["Pizzas", "Italian"],
+                    avgRating: 4.1,
+                    imageUrl: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/lapinoz_image"
                   }
                 }
               ]
@@ -425,64 +425,64 @@ export const restaurantData = [
       }
       },
       {
-      "cityName": "Indore",
-      "card": {
-        "card": {
+      cityName: "Indore",
+      card: {
+        card: {
           "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget",
-          "layout": {
-            "columns": 4
+          layout: {
+            columns: 4
           },
-          "id": "restaurant_grid_listing_v2",
-          "gridElements": {
-            "infoWithStyle": {
+          id: "restaurant_grid_listing_v2",
+          gridElements: {
+            infoWithStyle: {
               "@type": "type.googleapis.com/swiggy.seo.widgets.v1.FoodRestaurantGridListingInfo",
-              "restaurants": [
+              restaurants: [
                 {
-                  "info": {
-                    "id": "3002125",
-                    "name": "McDonald's",
-                    "locality": "Treasure Island",
-                    "areaName": "MG Road",
-                    "costForTwo": "₹350 for two",
-                    "cuisines": ["Burgers", "Beverages"],
-                    "avgRating": 4.4,
-                    "imageUrl": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/mcdonalds_image"
+                  info: {
+                    id: "3002125",
+                    name: "McDonald's",
+                    locality: "Treasure Island",
+                    areaName: "MG Road",
+                    costForTwo: "₹350 for two",
+                    cuisines: ["Burgers", "Beverages"],
+                    avgRating: 4.4,
+                    imageUrl: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/mcdonalds_image"
                   }
                 },
                 {
-                  "info": {
-                    "id": "3002126",
-                    "name": "Subway",
-                    "locality": "Vijay Nagar",
-                    "areaName": "Scheme No. 54",
-                    "costForTwo": "₹300 for two",
-                    "cuisines": ["Healthy Food", "Salads"],
-                    "avgRating": 4.2,
-                    "imageUrl": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/subway_image"
+                  info: {
+                    id: "3002126",
+                    name: "Subway",
+                    locality: "Vijay Nagar",
+                    areaName: "Scheme No. 54",
+                    costForTwo: "₹300 for two",
+                    cuisines: ["Healthy Food", "Salads"],
+                    avgRating: 4.2,
+                    imageUrl: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/subway_image"
                   }
                 },
                 {
-                  "info": {
-                    "id": "3002127",
-                    "name": "The Belgian Waffle Co.",
-                    "locality": "Rajwada",
-                    "areaName": "Indore Central",
-                    "costForTwo": "₹200 for two",
-                    "cuisines": ["Desserts", "Waffles"],
-                    "avgRating": 4.6,
-                    "imageUrl": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/waffleco_image"
+                  info: {
+                    id: "3002127",
+                    name: "The Belgian Waffle Co.",
+                    locality: "Rajwada",
+                    areaName: "Indore Central",
+                    costForTwo: "₹200 for two",
+                    cuisines: ["Desserts", "Waffles"],
+                    avgRating: 4.6,
+                    imageUrl: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/waffleco_image"
                   }
                 },
                 {
                   "info": {
                     "id": "3002128",
-                    "name": "Mitti Café",
-                    "locality": "Old Palasia",
-                    "areaName": "Navlakha",
-                    "costForTwo": "₹500 for two",
-                    "cuisines": ["Cafe", "Continental"],
-                    "avgRating": 4.5,
-                    "imageUrl": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/mitticafe_image"
+                    name: "Mitti Café",
+                    locality: "Old Palasia",
+                    areaName: "Navlakha",
+                    costForTwo: "₹500 for two",
+                    cuisines: ["Cafe", "Continental"],
+                    avgRating: 4.5,
+                    imageUrl: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/mitticafe_image"
                   }
                 },
               ]
