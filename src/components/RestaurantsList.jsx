@@ -104,7 +104,7 @@ const RestaurantList = () => {
           <div className="flex justify-center mt-10">
             <button
               onClick={() => setCardsToShow((prev) => prev + 4)}
-              className="px-6 py-2 bg-orange-500 text-white rounded-full hover:bg-orange-600 transition"
+              className="cursor-pointer px-6 py-2 bg-orange-500 text-white rounded-full hover:bg-orange-600 transition"
             >
               Show More
             </button>
