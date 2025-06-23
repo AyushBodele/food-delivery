@@ -52,11 +52,11 @@ const RestaurantList = () => {
       );
     case 'fast':
       return restaurantsToFilter.filter(
-        (r) => r.info?.fastDelivery === true
+        (r) => r.info.sla?.deliveryTime < 35
       );
     case 'offers':
       return restaurantsToFilter.filter(
-        (r) => r.info?.hasOffers === true
+        (r) => r.info?.costForTwo <= "₹200 for two"
       );
     default:
       return restaurantsToFilter;
