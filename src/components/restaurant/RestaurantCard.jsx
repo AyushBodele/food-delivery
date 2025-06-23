@@ -1,17 +1,14 @@
-import React from 'react';
-import PropTypes from 'prop-types';
 import { imageBaseURL } from '../../utils/imagesURL';
 
-const getSwiggyImageUrl = (imageId) => {
+const getImageUrl = (imageId) => {
   return `${imageBaseURL}${imageId}`;
 };
 
 const RestaurantCard = ({ restaurant }) => {
-  if (!restaurant?.info) return null;
 
   const {
     name,
-    imageUrl,
+    cloudinaryImageId,
     avgRating,
     areaName,
     locality,
@@ -24,7 +21,7 @@ const RestaurantCard = ({ restaurant }) => {
       
       <div className="relative h-48 overflow-hidden">
         <img
-          src={getSwiggyImageUrl(imageUrl)}
+          src={getImageUrl(cloudinaryImageId)}
           alt={name}
           className="w-full h-full object-cover"
         />
@@ -64,20 +61,5 @@ const RestaurantCard = ({ restaurant }) => {
   );
 };
 
-
-RestaurantCard.propTypes = {
-  restaurant: PropTypes.shape({
-    info: PropTypes.shape({
-      id: PropTypes.string.isRequired,
-      name: PropTypes.string.isRequired,
-      imageUrl: PropTypes.string.isRequired,
-      avgRating: PropTypes.number.isRequired,
-      areaName: PropTypes.string.isRequired,
-      locality: PropTypes.string.isRequired,
-      costForTwo: PropTypes.string.isRequired,
-      cuisines: PropTypes.arrayOf(PropTypes.string).isRequired,
-    }).isRequired,
-  }).isRequired,
-};
 
 export default RestaurantCard;
