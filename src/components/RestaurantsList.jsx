@@ -1,51 +1,26 @@
-import React, { useState, useEffect } from 'react';
-import { fetchAllRestaurants} from '../utils/restaurantlogic';
-import {cityCoordinates} from '../utils/data'; // ✅ FIXED path
-import {
-  groupRestaurantsByCity,
-  getRestaurantsForCity,
-  getAllRestaurants,
-  filterRestaurants,
-} from '../utils/restaurantlogic';
-import RestaurantView from "./restaurant/RestaurantView"; // ✅ FIXED path
+// utils/restaurantlogic.js
 
-const RestaurantList = () => {
-  const [cities, setCities] = useState([]);
-  const [activeFilter, setActiveFilter] = useState('all');
-  const [selectedCity, setSelectedCity] = useState('');
-  const [cardsToShow, setCardsToShow] = useState(8);
+export const fetchAllRestaurants = async (cityCoordinates) => {
+  const allRestaurants = [];
 
-  useEffect(() => {
-    const getData = async () => {
-      const restaurants = await fetchAllRestaurants(cityCoordinates);
-      const formatted = groupRestaurantsByCity(restaurants);
-      setCities(formatted);
-      setSelectedCity(formatted[0]?.cityName || '');
-    };
-    getData();
-  }, []);
+  for (let i = 0; i < cityCoordinates.length; i++) {
+    const { lat, lng, name } = cityCoordinates[i];
+    const url = `https://www.swiggy.com/dapi/restaurants/list/v5?lat=${lat}&lng=${lng}&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING`;
 
-  const restaurantsToFilter =
-    activeFilter === 'all'
-      ? getAllRestaurants(cities)
-      : getRestaurantsForCity(cities, selectedCity);
+    const res = await fetch(url);
+    const json = await res.json();
 
-  const filteredRestaurants = filterRestaurants(restaurantsToFilter, activeFilter);
-  const visibleRestaurants = filteredRestaurants.slice(0, cardsToShow);
+    const restaurants = json?.data?.cards?.find(
+      (card) => card?.card?.card?.gridElements?.infoWithStyle?.restaurants
+    )?.card?.card?.gridElements?.infoWithStyle?.restaurants;
 
-  return (
-    <RestaurantView
-      cities={cities}
-      activeFilter={activeFilter}
-      setActiveFilter={setActiveFilter}
-      selectedCity={selectedCity}
-      setSelectedCity={setSelectedCity}
-      cardsToShow={cardsToShow}
-      setCardsToShow={setCardsToShow}
-      filteredRestaurants={filteredRestaurants}
-      visibleRestaurants={visibleRestaurants}
-    />
-  );
+    if (restaurants) {
+      restaurants.forEach((r) => {
+        r.cityName = name || 'Unknown';
+      });
+      allRestaurants.push(...restaurants);
+    }
+  }
+
+  return allRestaurants;
 };
-
-export default RestaurantList;
