@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { fetchAllRestaurants} from '../utils/restaurantlogic';
-import {urls} from '../utils/data'; // ✅ FIXED path
+import {cityCoordinates} from '../utils/data'; // ✅ FIXED path
 import {
   groupRestaurantsByCity,
   getRestaurantsForCity,
@@ -17,7 +17,7 @@ const RestaurantList = () => {
 
   useEffect(() => {
     const getData = async () => {
-      const restaurants = await fetchAllRestaurants(urls);
+      const restaurants = await fetchAllRestaurants(cityCoordinates);
       const formatted = groupRestaurantsByCity(restaurants);
       setCities(formatted);
       setSelectedCity(formatted[0]?.cityName || '');

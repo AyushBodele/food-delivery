@@ -99,14 +99,22 @@ export const categories = [
   },
 ];
 
-export const urls = [
-  "https://www.swiggy.com/dapi/restaurants/list/v5?lat=21.1458004&lng=79.0881546&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING",
-  "https://www.swiggy.com/dapi/restaurants/list/v5?lat=20.9319821&lng=77.7523039&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING",
-  "https://www.swiggy.com/dapi/restaurants/list/v5?lat=18.5246091&lng=73.8786239&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING",
-  "https://www.swiggy.com/dapi/restaurants/list/v5?lat=18.9581934&lng=72.8320729&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING",
-  "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9628669&lng=77.57750899999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING",
-  "https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.7040592&lng=77.10249019999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+// utils/data.js
+
+export const cityCoordinates = [
+  { name: "Nagpur", lat: 21.1458004, lng: 79.0881546 },
+  { name: "Chhindwara", lat: 20.9319821, lng: 77.7523039 },
+  { name: "Pune", lat: 18.5246091, lng: 73.8786239 },
+  { name: "Mumbai", lat: 18.9581934, lng: 72.8320729 },
+  { name: "Bangalore", lat: 12.9628669, lng: 77.577509 },
+  { name: "Delhi", lat: 28.7040592, lng: 77.1024902 },
 ];
+
+export const urls = cityCoordinates.map(
+  ({ lat, lng }) =>
+    `https://www.swiggy.com/dapi/restaurants/list/v5?lat=${lat}&lng=${lng}&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING`
+);
+
 
 
 
