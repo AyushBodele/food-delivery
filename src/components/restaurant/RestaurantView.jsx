@@ -3,7 +3,6 @@ import FilterBar from "./FilterBar";
 import CitySelector from "./CitySelector";
 import RestaurantGrid from "./RestaurantGrid";
 
-
 const filters = [
   { key: 'all', label: 'All' },
   { key: 'rating', label: 'Rating 4.0+' },

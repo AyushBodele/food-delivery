@@ -1,23 +1,22 @@
-// fetchAllRestaurants.js
-export const fetchAllRestaurants = async (urls) => {
+export const fetchAllRestaurants = async (cityCoordinates) => {
   const allRestaurants = [];
 
-  for (let i = 0; i < urls.length; i++) {
-    const res = await fetch(urls[i]);
-    const json = await res.json();
+  for (const city of cityCoordinates) {
+    const url = `https://www.swiggy.com/dapi/restaurants/list/v5?lat=${city.lat}&lng=${city.lng}&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING`;
+    try {
+      const res = await fetch(url);
+      const json = await res.json();
 
-    const restaurants = json?.data?.cards?.find(
-      (card) => card?.card?.card?.gridElements?.infoWithStyle?.restaurants
-    )?.card?.card?.gridElements?.infoWithStyle?.restaurants;
+      const restaurants = json?.data?.cards?.find(
+        (card) => card?.card?.card?.gridElements?.infoWithStyle?.restaurants
+      )?.card?.card?.gridElements?.infoWithStyle?.restaurants;
 
-    // 👇 Assign cityName based on index (e.g., 0 = Pune, 1 = Mumbai)
-    const cityNames = ['Nagpur','Amravati','Pune', 'Mumbai', 'Bangalore', 'Delhi']; // customize this to match your `urls` order
-
-    if (restaurants) {
-      restaurants.forEach((r) => {
-        r.cityName = cityNames[i] || 'Unknown';
-      });
-      allRestaurants.push(...restaurants);
+      if (restaurants) {
+        restaurants.forEach((r) => (r.cityName = city.name));
+        allRestaurants.push(...restaurants);
+      }
+    } catch (error) {
+      console.error("Failed to fetch for", city.name, error);
     }
   }
 
@@ -27,7 +26,7 @@ export const fetchAllRestaurants = async (urls) => {
 export const groupRestaurantsByCity = (restaurants) => {
   const grouped = {};
   restaurants.forEach((r) => {
-    const cityName = r.cityName || 'Unknown';
+    const cityName = r.cityName || "Unknown";
     if (!grouped[cityName]) grouped[cityName] = [];
     grouped[cityName].push(r);
   });
@@ -69,12 +68,14 @@ export const getAllRestaurants = (cities) => {
 
 export const filterRestaurants = (restaurants, filter) => {
   switch (filter) {
-    case 'rating':
-      return restaurants.filter((r) => parseFloat(r.info?.avgRating) >= 4);
-    case 'fast':
-      return restaurants.filter((r) => r.info.sla?.deliveryTime < 35);
-    case 'offers':
-      return restaurants.filter((r) => r.info?.costForTwo <= '₹300 for two');
+    case "rating":
+      return restaurants.filter((r) => parseFloat(r.info?.avgRating) >= 4.0);
+    case "fast":
+      return restaurants.filter((r) => r.info?.sla?.deliveryTime < 35);
+    case "offers":
+      return restaurants.filter(
+        (r) => parseInt(r.info?.costForTwo?.replace(/\D/g, "")) <= 200
+      );
     default:
       return restaurants;
   }

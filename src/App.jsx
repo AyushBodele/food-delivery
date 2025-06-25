@@ -5,7 +5,6 @@ import Page2 from './components/Page2'
 import './index.css'
 import Footer from './components/Footer'
 
-
 function App() {
   const [count, setCount] = useState(0)
 
