@@ -116,6 +116,34 @@ export const urls = cityCoordinates.map(
     `https://www.swiggy.com/dapi/restaurants/list/v5?lat=${lat}&lng=${lng}&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING`
 );
 
+export const foodMeta = {
+  biryani: { collection: "83639", tag: "layout_CCS_Biryani" },
+  pizza: { collection: "83631", tag: "layout_CCS_Pizza" },
+  cake: { collection: "83655", tag: "layout_CCS_Cake" },
+  burger: { collection: "83637", tag: "layout_CCS_Burger" },
+  paratha: { collection: "80475", tag: "" },
+  rolls: { collection: "83669", tag: "layout_CCS_Rolls" },
+  shakes: { collection: "83673", tag: "layout_CCS_Shakes" },
+  dosa: { collection: "80424", tag: "layout_CCS_Dosa" },
+  khichdi: { collection: "80455", tag: "" },
+  noodles: { collection: "80463", tag: "" },
+  icecream: { collection: "83640", tag: "layout_CCS_IceCreams" },
+  cholebhature: { collection: "80382", tag: "layout_CCS_CholeBhature" },
+  rasmalai: { collection: "80390", tag: "" },
+  salad: { collection: "80394", tag: "layout_CCS_Salad" },
+  coffee: { collection: "83659", tag: "layout_CCS_Coffee" },
+  tea: { collection: "80406", tag: "layout_CCS_Tea" },
+  pasta: { collection: "80479", tag: "" },
+  vada: { collection: "80425", tag: "" }
+};
+
+export const getCategoryApiUrl = ({ lat, lng, collection, tag }) => {
+  return `https://www.swiggy.com/dapi/restaurants/list/v5?lat=${lat}&lng=${lng}&collection=${collection}&tags=${tag}&sortBy=&filters=&type=rcv2&offset=0&page_type=null`;
+};
+
+
+
+
 
 
 
