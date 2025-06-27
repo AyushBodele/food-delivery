@@ -6,14 +6,12 @@ import {
   Outlet
 } from 'react-router-dom';
 
-import Nav from './components/Nav';
 import App from './App';
 import CategoryPage from './Menu/CategoryPage';
 
 // Common layout with Nav on all pages
 const AppLayout = () => (
   <>
-    <Nav />
     <Outlet />
   </>
 );
