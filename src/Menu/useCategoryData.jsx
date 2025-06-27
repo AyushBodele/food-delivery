@@ -12,8 +12,8 @@ export default function useCategoryData(type) {
     if (!meta) return;
 
     const apiUrl = getCategoryApiUrl({
-      lat: 20.9319821,
-      lng: 77.7523039,
+      lat: 21.1458004,
+      lng: 79.0881546,
       collection: meta.collection,
       tag: meta.tag,
     });

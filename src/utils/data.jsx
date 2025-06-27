@@ -25,24 +25,24 @@ export const cardData = [
 ];
 
 export const foodItems = [
-  { name: 'Biryani', image: 'https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Biryani.png' },
+  { name: 'Biryani', image: 'https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Biryani.png' },
   { name: 'Pizza', image: 'https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Pizza.png' },
   { name: 'Cake', image: 'https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Cake.png' },
   { name: 'Burger', image: 'https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Burger.png' },
   { name: 'Paratha', image: 'https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Paratha.png' },
   { name: 'Rolls', image: 'https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Rolls.png' },
-  { name: 'Shake', image: 'https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Shake.png' },
-  { name: 'Dosa', image: 'https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Dosa.png' },
+  { name: 'Kebab', image: 'https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Kebab.png' },
+  { name: 'Pav Bhaji', image: 'https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_Pav Bhaji.png' },
   { name: 'Khichdi', image: 'https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Khichdi.png' },
   { name: 'Noodles', image: 'https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Noodles.png' },
-  { name: 'Ice Cream', image: 'https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Ice%20Cream.png' },
-  { name: 'Chole Bhature', image: 'https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Chole%20Bhature.png' },
+  { name: 'Momos', image: 'https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Momos.png' },
+  { name: 'Chinese', image: 'https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Noodles.png' },
   { name: 'Rasmalai', image: 'https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Rasmalai.png' },
-  { name: 'Salad', image: 'https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Salad.png' },
+  { name: 'Veg', image: 'https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_Pure Veg.png' },
   { name: 'Coffee', image: 'https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Coffee.png' },
   { name: 'Tea', image: 'https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Tea.png' },
   { name: 'Pasta', image: 'https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Pasta.png' },
-  { name: 'Vada', image: 'https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Vada.png' },
+  { name: 'Shake', image: 'https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_Shake.png' },
 
 ];
 
@@ -111,10 +111,6 @@ export const cityCoordinates = [
   { name: "Delhi", lat: 28.7040592, lng: 77.1024902 },
 ];
 
-export const urls = cityCoordinates.map(
-  ({ lat, lng }) =>
-    `https://www.swiggy.com/dapi/restaurants/list/v5?lat=${lat}&lng=${lng}&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING`
-);
 
 export const foodMeta = {
   biryani: { collection: "83639", tag: "layout_CCS_Biryani" },
@@ -123,23 +119,26 @@ export const foodMeta = {
   burger: { collection: "83637", tag: "layout_CCS_Burger" },
   paratha: { collection: "80475", tag: "" },
   rolls: { collection: "83669", tag: "layout_CCS_Rolls" },
-  shakes: { collection: "83673", tag: "layout_CCS_Shakes" },
-  dosa: { collection: "80424", tag: "layout_CCS_Dosa" },
+  kebab: { collection: "80451", tag: "" },
+  dosa: { collection: "80362", tag: "layout_PavBhaji_Contextual" },
   khichdi: { collection: "80455", tag: "" },
   noodles: { collection: "80463", tag: "" },
-  icecream: { collection: "83640", tag: "layout_CCS_IceCreams" },
-  cholebhature: { collection: "80382", tag: "layout_CCS_CholeBhature" },
+  momos: { collection: "80461", tag: "layout_CCS_Momos" },
+  chinese: { collection: "83636", tag: "layout_CCS_Chinese" },
   rasmalai: { collection: "80390", tag: "" },
-  salad: { collection: "80394", tag: "layout_CCS_Salad" },
+  veg: { collection: "80435", tag: "layout_CCS_PureVeg" },
   coffee: { collection: "83659", tag: "layout_CCS_Coffee" },
   tea: { collection: "80406", tag: "layout_CCS_Tea" },
   pasta: { collection: "80479", tag: "" },
-  vada: { collection: "80425", tag: "" }
+  shake: { collection: "83673", tag: "layout_CCS_Shakes" }
 };
 
-export const getCategoryApiUrl = ({ lat, lng, collection, tag }) => {
-  return `https://www.swiggy.com/dapi/restaurants/list/v5?lat=${lat}&lng=${lng}&collection=${collection}&tags=${tag}&sortBy=&filters=&type=rcv2&offset=0&page_type=null`;
+export const getCategoryApiUrl = ({ lat, lng, collection, tag, offset = 0 }) => {
+  return `https://www.swiggy.com/dapi/restaurants/list/v5?lat=${lat}&lng=${lng}&collection=${collection}&tags=${tag || ''}&sortBy=&filters=&type=rcv2&offset=${offset}&page_type=null`;
 };
+
+
+
 
 
 
