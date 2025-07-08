@@ -1,4 +1,4 @@
-import { logo } from '../utils/imagesURL';
+import { logo } from '../../constants/images';
 import { HiArrowUpRight } from 'react-icons/hi2';
 
 function Nav() {

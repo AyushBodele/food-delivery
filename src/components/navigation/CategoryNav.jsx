@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { ChevronDown, Briefcase, Search, Percent, HelpCircle, User, ShoppingBag } from 'lucide-react';
 
-export default function SwiggyNavbar() {
+export default function CategoryNav() {
   const [location, setLocation] = useState('Other');
 
   return (

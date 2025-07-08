@@ -1,7 +1,7 @@
-import { foodItems } from "../utils/data";
-import { Link } from 'react-router-dom'; // 🧠 ye zaroori hai
-import RestaurantList from './RestaurantsList';
-import AppBanner from './AppBanner';
+import { foodItems } from "../../constants/data";
+import { Link } from 'react-router-dom';
+import RestaurantList from '../restaurant/RestaurantList';
+import AppBanner from '../common/AppBanner';
 import Grocery from "./Grocery";
 
 export default function FoodGrid() {
@@ -11,7 +11,7 @@ export default function FoodGrid() {
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8">
           {foodItems.map((item, index) => (
             <Link
-              to={`/category/${item.name.toLowerCase()}`} // 🔥 routing trigger
+              to={`/category/${item.name.toLowerCase()}`}
               key={index}
               className="flex flex-col items-center group cursor-pointer"
             >

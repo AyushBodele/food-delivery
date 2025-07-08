@@ -1,4 +1,4 @@
-import { imageBaseURL } from '../../utils/imagesURL';
+import { imageBaseURL } from '../../constants/images';
 
 const getImageUrl = (imageId) => {
   return `${imageBaseURL}${imageId}`;

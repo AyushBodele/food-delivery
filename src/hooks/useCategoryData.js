@@ -1,8 +1,7 @@
 import { useEffect, useState } from 'react';
-import {foodMeta} from '../utils/data';
-import {getCategoryApiUrl} from '../utils/data';
+import { foodMeta, getCategoryApiUrl } from '../constants/data';
 
-export default function useCategoryData(type) {
+export function useCategoryData(type) {
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   const [text, setText] = useState('');

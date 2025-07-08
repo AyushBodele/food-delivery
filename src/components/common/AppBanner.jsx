@@ -1,5 +1,5 @@
 import React from 'react';
-import { bannerImg } from "../utils/imagesURL";
+import { bannerImg } from "../../constants/images";
 
 const AppBanner = () => {
   return (

@@ -1,22 +1,36 @@
-import { useState } from 'react'
-import Hero from './components/Hero'
-import Nav from './components/Nav'
-import Page2 from './components/Page2'
-import './index.css'
-import Footer from './components/Footer'
+import React from 'react';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import MainLayout from './layouts/MainLayout';
+import CategoryLayout from './layouts/CategoryLayout';
+import HomePage from './pages/HomePage';
+import CategoryPage from './pages/CategoryPage';
+import './index.css';
 
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <MainLayout />,
+    children: [
+      {
+        index: true,
+        element: <HomePage />
+      }
+    ]
+  },
+  {
+    path: '/category/:type',
+    element: <CategoryLayout />,
+    children: [
+      {
+        index: true,
+        element: <CategoryPage />
+      }
+    ]
+  }
+]);
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <Nav />
-      <Hero />
-      <Page2 />
-      <Footer />
-    </>
-  )
+  return <RouterProvider router={router} />;
 }
 
-export default App
+export default App;

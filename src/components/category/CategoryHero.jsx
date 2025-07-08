@@ -1,9 +1,9 @@
 import { SlidersHorizontal, ChevronDown } from 'lucide-react';
 import { useParams } from 'react-router-dom';
 import RestaurantGrid from './RestaurantGrid';
-import useCategoryData from './useCategoryData';
+import { useCategoryData } from '../../hooks/useCategoryData';
 
-function CategoryHeader() {
+function CategoryHero() {
   const { type } = useParams();
   const { title, description, text } = useCategoryData(type);
 
@@ -32,9 +32,7 @@ function CategoryHeader() {
         <h2 className="text-2xl font-bold text-gray-900 mt-6">{text}</h2>
       )}
 
-    
       </div>
-      {/* ✅ Pass type as prop */}
       <div className='ml-20 mr-10'>
         <RestaurantGrid type={type} />
       </div>
@@ -42,4 +40,4 @@ function CategoryHeader() {
   );
 }
 
-export default CategoryHeader;
+export default CategoryHero;

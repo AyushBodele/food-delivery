@@ -2,7 +2,6 @@ import foodImage1 from '../assets/foodImage1.png';
 import foodImage2 from '../assets/foodImage2.png';
 import foodImage3 from '../assets/foodImage3.png';
 
-
 export const cardData = [
   {
     title: 'FOOD DELIVERY',
@@ -43,9 +42,7 @@ export const foodItems = [
   { name: 'Tea', image: 'https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Tea.png' },
   { name: 'Pasta', image: 'https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Pasta.png' },
   { name: 'Shake', image: 'https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_Shake.png' },
-
 ];
-
 
 export const categories = [
   {
@@ -100,8 +97,6 @@ export const categories = [
   },
 ];
 
-// utils/data.js
-
 export const cityCoordinates = [
   { name: "Nagpur", lat: 21.1458004, lng: 79.0881546 },
   { name: "Chhindwara", lat: 20.9319821, lng: 77.7523039 },
@@ -110,7 +105,6 @@ export const cityCoordinates = [
   { name: "Bangalore", lat: 12.9628669, lng: 77.577509 },
   { name: "Delhi", lat: 28.7040592, lng: 77.1024902 },
 ];
-
 
 export const foodMeta = {
   biryani: { collection: "83639", tag: "layout_CCS_Biryani" },
@@ -136,16 +130,3 @@ export const foodMeta = {
 export const getCategoryApiUrl = ({ lat, lng, collection, tag, offset = 0 }) => {
   return `/dapi/restaurants/list/v5?lat=${lat}&lng=${lng}&collection=${collection}&tags=${tag || ''}&sortBy=&filters=&type=rcv2&offset=${offset}&page_type=null`;
 };
-
-
-
-
-
-
-
-
-
-
-
-
-

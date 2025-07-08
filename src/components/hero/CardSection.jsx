@@ -1,6 +1,6 @@
 import React from 'react';
-import Card from './HeroCard'; 
-import { cardData } from '../utils/data'; 
+import Card from './Card'; 
+import { cardData } from '../../constants/data'; 
 
 const CardSection = () => {
   return (

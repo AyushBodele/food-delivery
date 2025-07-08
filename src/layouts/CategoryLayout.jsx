@@ -1,0 +1,17 @@
+import { Outlet } from 'react-router-dom';
+import CategoryNav from '../components/navigation/CategoryNav';
+import Footer from '../components/common/Footer';
+
+const CategoryLayout = () => {
+  return (
+    <div className="min-h-screen flex flex-col">
+      <CategoryNav />
+      <main className="flex-1">
+        <Outlet />
+      </main>
+      <Footer />
+    </div>
+  );
+};
+
+export default CategoryLayout;

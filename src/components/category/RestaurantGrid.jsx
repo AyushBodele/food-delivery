@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import RestaurantCard from '../components/restaurant/RestaurantCard';
-import { foodMeta, getCategoryApiUrl } from '../utils/data';
+import RestaurantCard from '../restaurant/RestaurantCard';
+import { foodMeta, getCategoryApiUrl } from '../../constants/data';
 
 const RestaurantGrid = ({ type }) => {
   const [restaurants, setRestaurants] = useState([]);
@@ -52,9 +52,9 @@ const RestaurantGrid = ({ type }) => {
       setIsLoading(true);
       setRestaurants([]);
 
-      let result = await fetchWithApi(meta, false); // Try dapi
+      let result = await fetchWithApi(meta, false);
       if (result.length === 0) {
-        result = await fetchWithApi(meta, true); // Fallback to mapi
+        result = await fetchWithApi(meta, true);
       }
 
       setRestaurants(result);

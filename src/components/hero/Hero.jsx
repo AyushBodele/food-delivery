@@ -1,8 +1,8 @@
 import { useEffect, useState, useRef } from 'react';
 import { gsap } from 'gsap';
-import CardSection from './HeroCardSection';
+import CardSection from './CardSection';
 import MobileHero from './MobileHero';
-import { heroImg1, heroImg2 } from '../utils/imagesURL';
+import { heroImg1, heroImg2 } from '../../constants/images';
 import { HiOutlineMapPin, HiChevronDown } from 'react-icons/hi2';
 import { FiSearch } from 'react-icons/fi';
 

@@ -26,7 +26,6 @@ function Card({ image, title, subtitle, discount }) {
           </button>
         </div>
 
-
         <img
           src={image}
           alt="Food"
