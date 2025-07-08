@@ -1,0 +1,1 @@
+export { default as Grocery } from './components/Grocery';

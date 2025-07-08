@@ -1,5 +1,5 @@
-import Hero from '../components/hero/Hero';
-import FoodGrid from '../components/food/FoodGrid';
+import { Hero } from '../components/hero';
+import { FoodGrid } from '../features/food';
 
 const HomePage = () => {
   return (

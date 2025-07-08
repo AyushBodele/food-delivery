@@ -1,8 +1,8 @@
-import { logo } from '../../constants/images';
+import { logo } from '../../shared/constants/images';
 import { HiOutlineMapPin, HiChevronDown } from 'react-icons/hi2';
 import { FiSearch } from 'react-icons/fi';
 import Card from './Card';
-import { cardData } from '../../constants/data';
+import { cardData } from '../../shared/constants/data';
 
 export default function MobileHero() {
   return (

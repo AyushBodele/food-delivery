@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from 'react';
 import { gsap } from 'gsap';
 import CardSection from './CardSection';
 import MobileHero from './MobileHero';
-import { heroImg1, heroImg2 } from '../../constants/images';
+import { heroImg1, heroImg2 } from '../../shared/constants/images';
 import { HiOutlineMapPin, HiChevronDown } from 'react-icons/hi2';
 import { FiSearch } from 'react-icons/fi';
 

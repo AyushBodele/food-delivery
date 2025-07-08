@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from './Card'; 
-import { cardData } from '../../constants/data'; 
+import { cardData } from '../../shared/constants/data'; 
 
 const CardSection = () => {
   return (

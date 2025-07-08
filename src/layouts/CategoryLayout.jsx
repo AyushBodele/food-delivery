@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom';
-import CategoryNav from '../components/navigation/CategoryNav';
-import Footer from '../components/common/Footer';
+import { CategoryNav } from '../components/navigation';
+import { Footer } from '../components/layout';
 
 const CategoryLayout = () => {
   return (

@@ -1,4 +1,4 @@
-import CategoryHero from '../components/category/CategoryHero';
+import { CategoryHero } from '../features/category';
 
 const CategoryPage = () => {
   return <CategoryHero />;
