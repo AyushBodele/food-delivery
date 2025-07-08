@@ -7,7 +7,7 @@ import {
   getAllRestaurants,
   filterRestaurants,
 } from '../utils/restaurantlogic';
-import RestaurantView from "./restaurant/restaurantView"; // ✅ FIXED path
+import RestaurantView from "./restaurant/RestaurantView"; // ✅ FIXED path
 
 const RestaurantList = () => {
   const [cities, setCities] = useState([]);
