@@ -1,11 +1,10 @@
-import { Hero } from '../components/hero';
-import { FoodGrid } from '../features/food';
+import { HeroSection, CategoryGrid } from '../features/home';
 
 const HomePage = () => {
   return (
     <>
-      <Hero />
-      <FoodGrid />
+      <HeroSection />
+      <CategoryGrid />
     </>
   );
 };

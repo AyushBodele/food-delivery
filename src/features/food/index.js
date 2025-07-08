@@ -1,1 +1,0 @@
-export { default as FoodGrid } from './components/FoodGrid';

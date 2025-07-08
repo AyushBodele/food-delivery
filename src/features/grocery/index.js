@@ -1,1 +1,1 @@
-export { default as Grocery } from './components/Grocery';
+export { default as Grocery } from './Grocery';

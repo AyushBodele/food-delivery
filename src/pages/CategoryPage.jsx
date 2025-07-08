@@ -1,4 +1,4 @@
-import { CategoryHero } from '../features/category';
+import { CategoryHero } from '../features/restaurants';
 
 const CategoryPage = () => {
   return <CategoryHero />;

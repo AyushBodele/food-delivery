@@ -1,11 +1,10 @@
 import { Outlet } from 'react-router-dom';
-import { CategoryNav } from '../components/navigation';
-import { Footer } from '../components/layout';
+import { CategoryNavbar, Footer } from '../components/layout';
 
 const CategoryLayout = () => {
   return (
     <div className="min-h-screen flex flex-col">
-      <CategoryNav />
+      <CategoryNavbar />
       <main className="flex-1">
         <Outlet />
       </main>
