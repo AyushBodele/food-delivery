@@ -134,7 +134,7 @@ export const foodMeta = {
 };
 
 export const getCategoryApiUrl = ({ lat, lng, collection, tag, offset = 0 }) => {
-  return `https://www.swiggy.com/dapi/restaurants/list/v5?lat=${lat}&lng=${lng}&collection=${collection}&tags=${tag || ''}&sortBy=&filters=&type=rcv2&offset=${offset}&page_type=null`;
+  return `/dapi/restaurants/list/v5?lat=${lat}&lng=${lng}&collection=${collection}&tags=${tag || ''}&sortBy=&filters=&type=rcv2&offset=${offset}&page_type=null`;
 };
 
 

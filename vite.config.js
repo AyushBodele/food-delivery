@@ -7,4 +7,13 @@ export default defineConfig({
   plugins: [react(),
     tailwindcss(),
   ],
+  server: {
+    proxy: {
+      '/dapi': {
+        target: 'https://www.swiggy.com',
+        changeOrigin: true,
+        secure: true,
+      }
+    }
+  }
 })

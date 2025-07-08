@@ -2,7 +2,7 @@ export const fetchAllRestaurants = async (cityCoordinates) => {
   const allRestaurants = [];
 
   for (const city of cityCoordinates) {
-    const url = `https://www.swiggy.com/dapi/restaurants/list/v5?lat=${city.lat}&lng=${city.lng}&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING`;
+    const url = `/dapi/restaurants/list/v5?lat=${city.lat}&lng=${city.lng}&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING`;
     try {
       const res = await fetch(url);
       const json = await res.json();
