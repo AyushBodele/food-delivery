@@ -12,6 +12,7 @@ import RestaurantView from './restaurant/RestaurantView';
 
 
 
+
 const RestaurantList = () => {
   const [cities, setCities] = useState([]);
   const [activeFilter, setActiveFilter] = useState('all');
